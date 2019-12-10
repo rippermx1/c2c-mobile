@@ -3,12 +3,50 @@
     <ion-buttons slot="start">
       <ion-menu-button></ion-menu-button>
     </ion-buttons>
-    <ion-title>
-      Home
-    </ion-title>
+    <app-search></app-search>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-  <ion-searchbar animated></ion-searchbar>
+  <ion-refresher slot="fixed" (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+
+  <app-offerts></app-offerts>
+
+  <ion-list>
+    <ion-list-header>
+      Categorias
+    </ion-list-header>
+    <ion-item>
+      <ion-label>
+        Icon End
+      </ion-label>
+      <ion-icon name="information-circle" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Icon End
+      </ion-label>
+      <ion-icon name="information-circle" slot="end"></ion-icon>
+    </ion-item>
+    <ion-item>
+      <ion-label>
+        Icon End
+      </ion-label>
+      <ion-icon name="information-circle" slot="end"></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-card>
+    <img src="http://lorempixel.com/400/400/" />
+    <ion-card-header>
+      <ion-card-subtitle>Destination</ion-card-subtitle>
+      <ion-card-title>Madison, WI</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      Founded in 1829 on an isthmus between Lake Monona and Lake Mendota, Madison was named the capital of the Wisconsin Territory in 1836.
+    </ion-card-content>
+  </ion-card>
+
 </ion-content>
