@@ -6,6 +6,7 @@ import { MenuComponent } from './menu/menu.component';
 import { OffertsComponent } from './offerts/offerts.component';
 import { SearchComponent } from './search/search.component';
 import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
+import { ShoppingCartDetailComponent } from './shopping-cart-detail/shopping-cart-detail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -14,6 +15,7 @@ import { NavbarComponent } from './navbar/navbar.component';
       OffertsComponent,
       SearchComponent,
       ShoppingCartComponent,
+      ShoppingCartDetailComponent,
       NavbarComponent
   ],
   exports: [
@@ -21,6 +23,7 @@ import { NavbarComponent } from './navbar/navbar.component';
       OffertsComponent,
       SearchComponent,
       ShoppingCartComponent,
+      ShoppingCartDetailComponent,
       NavbarComponent
   ],
   imports: [

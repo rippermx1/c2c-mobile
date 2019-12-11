@@ -17,9 +17,34 @@ export class MenuComponent implements OnInit {
   sideMenuInit() {
     this.menuPages = [
       {
-        title: 'Home',
+        title: 'Registrate',
+        url: '/register',
+        icon: 'person'
+      },
+      {
+        title: 'Iniciar Sesión',
+        url: '/login',
+        icon: 'key'
+      },
+      {
+        title: 'Inicio',
         url: '/home',
         icon: 'home'
+      },
+      {
+        title: 'Mis Compras',
+        url: '/orders',
+        icon: 'cart'
+      },
+      {
+        title: 'Favoritos',
+        url: '/favorites',
+        icon: 'heart'
+      },
+      {
+        title: 'Cerrar Sesion',
+        url: '/logout',
+        icon: 'close'
       }
     ];
   }

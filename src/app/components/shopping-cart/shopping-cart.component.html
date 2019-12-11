@@ -1,4 +1,4 @@
-<ion-item *ngFor="let item of items" (click)="buttonClick($event)">
+<ion-item *ngFor="let item of items" (click)="showItemDetail(item)">
     <ion-thumbnail slot="end">
         <img [src]="item.image">
     </ion-thumbnail>

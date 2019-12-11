@@ -24,7 +24,7 @@ export class ShoppingCartComponent implements OnInit {
 
   ngOnInit() {}
 
-  buttonClick(event) {
-    console.log(event);
+  showItemDetail(item) {
+    console.log(item);
   }
 }
