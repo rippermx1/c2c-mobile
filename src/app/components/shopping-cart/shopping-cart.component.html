@@ -1,10 +1,14 @@
-<ion-item *ngFor="let item of items" (click)="showItemDetail(item)">
-    <ion-thumbnail slot="end">
-        <img [src]="item.image">
-    </ion-thumbnail>
-    <ion-label>
-        <h2>${{item.price}}</h2>
-        <p>{{item.name}}</p>
-        <p>{{item.shipping}}</p>
-    </ion-label>
-</ion-item>
+<ion-card *ngFor="let item of items">
+    <ion-item>
+        <ion-thumbnail slot="end">
+            <img [src]="item.image">
+        </ion-thumbnail>
+        <ion-label>
+            <h2>${{item.price}}</h2>
+            <p>{{item.name}}</p>
+            <p *ngIf="item.free_shipping">
+                <ion-icon name="paper-plane"></ion-icon> Envio gratis
+            </p>
+        </ion-label>
+    </ion-item>
+</ion-card>
