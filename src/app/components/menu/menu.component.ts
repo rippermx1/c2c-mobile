@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {IMenuItem} from '../../interfaces/menu/IMenuItem';
 
 @Component({
   selector: 'app-menu',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./menu.component.scss'],
 })
 export class MenuComponent implements OnInit {
-  menuPages: any;
+  menuItems: IMenuItem[];
 
   constructor() { }
 
@@ -15,34 +16,34 @@ export class MenuComponent implements OnInit {
   }
 
   sideMenuInit() {
-    this.menuPages = [
+    this.menuItems = [
       {
-        title: 'Registrate',
+        text: 'Registrate',
         url: '/register',
         icon: 'person'
       },
       {
-        title: 'Iniciar Sesión',
+        text: 'Iniciar Sesión',
         url: '/login',
         icon: 'key'
       },
       {
-        title: 'Inicio',
+        text: 'Inicio',
         url: '/home',
         icon: 'home'
       },
       {
-        title: 'Mis Compras',
+        text: 'Mis Compras',
         url: '/orders',
         icon: 'cart'
       },
       {
-        title: 'Favoritos',
+        text: 'Favoritos',
         url: '/favorites',
         icon: 'heart'
       },
       {
-        title: 'Cerrar Sesion',
+        text: 'Cerrar Sesion',
         url: '/logout',
         icon: 'close'
       }

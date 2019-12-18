@@ -3,10 +3,8 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
-import { OffertsComponent } from './offerts/offerts.component';
+import { OffertsComponent } from './offers/offerts.component';
 import { SearchComponent } from './search/search.component';
-import { ShoppingCartComponent } from './shopping-cart/shopping-cart.component';
-import { ShoppingCartDetailComponent } from './shopping-cart-detail/shopping-cart-detail.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
@@ -14,16 +12,12 @@ import { NavbarComponent } from './navbar/navbar.component';
       MenuComponent,
       OffertsComponent,
       SearchComponent,
-      ShoppingCartComponent,
-      ShoppingCartDetailComponent,
       NavbarComponent
   ],
   exports: [
       MenuComponent,
       OffertsComponent,
       SearchComponent,
-      ShoppingCartComponent,
-      ShoppingCartDetailComponent,
       NavbarComponent
   ],
   imports: [

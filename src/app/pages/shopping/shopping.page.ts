@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {INavbar} from '../../interfaces/navbar/INavbar';
 
 @Component({
   selector: 'app-shopping',
@@ -6,6 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./shopping.page.scss'],
 })
 export class ShoppingPage implements OnInit {
+  /**
+   * Navbar object for shopping page
+   */
+  navbar: INavbar = {
+    url: '/home',
+    icon: 'home',
+    searchBar: true
+  };
+
   items: any = [
     {
       id: 1,

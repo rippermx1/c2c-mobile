@@ -1,7 +1,10 @@
 <ion-header>
-  <app-navbar></app-navbar>
+  <app-navbar [navbar]="navbar"></app-navbar>
 </ion-header>
 
 <ion-content>
-  <app-shopping-cart [items]="items"></app-shopping-cart>
+  <ion-item>
+    <ion-icon slot="start" name="switch"></ion-icon>
+    <ion-label>Filtros</ion-label>
+  </ion-item>
 </ion-content>

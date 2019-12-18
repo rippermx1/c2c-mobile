@@ -9,8 +9,12 @@ const routes: Routes = [
     loadChildren: () => import('./pages/shopping/shopping.module').then( m => m.ShoppingPageModule)
   },
   {
-    path: 'shopping/:id',
-    loadChildren: () => import('./pages/shopping-detail/shopping-detail.module').then( m => m.ShoppingDetailPageModule)
+    path: 'offers',
+    loadChildren: () => import('./pages/offers/offers.module').then( m => m.OffersPageModule)
+  },
+  {
+    path: 'offers/:id',
+    loadChildren: () => import('./pages/offers/offers.module').then(m => m.OffersPageModule)
   }
 ];
 

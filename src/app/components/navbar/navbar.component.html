@@ -1,11 +1,12 @@
 <ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-menu-button></ion-menu-button>
-  </ion-buttons>
   <ion-buttons slot="end">
-    <ion-button routerLink="/shopping">
-      <ion-icon slot="icon-only" name="cart"></ion-icon>
+    <ion-button routerLink="{{navbar.url}}">
+      <ion-icon slot="icon-only" name="{{navbar.icon}}"></ion-icon>
     </ion-button>
   </ion-buttons>
-  <app-search></app-search>
+  <app-search *ngIf="navbar.searchBar"></app-search>
+  <ion-label *ngIf="navbar.text">{{navbar.text}}</ion-label>
+  <ion-buttons slot="end">
+    <ion-menu-button><ion-icon name="more"></ion-icon></ion-menu-button>
+  </ion-buttons>
 </ion-toolbar>

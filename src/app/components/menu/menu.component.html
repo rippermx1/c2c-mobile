@@ -13,11 +13,11 @@
     </ion-toolbar>
   </ion-header>
   <ion-content>
-    <ion-list *ngFor="let page of menuPages">
+    <ion-list *ngFor="let menuItem of menuItems">
       <ion-menu-toggle auto-hide="true">
-        <ion-item [routerLink]="page.url" routerDirection="forward">
-          <ion-icon [name]="page.icon" slot="start"></ion-icon>
-          {{page.title}}
+        <ion-item [routerLink]="menuItem.url" routerDirection="forward">
+          <ion-icon [name]="menuItem.icon" slot="start"></ion-icon>
+          {{menuItem.text}}
         </ion-item>
       </ion-menu-toggle>
     </ion-list>

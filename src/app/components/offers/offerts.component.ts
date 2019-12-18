@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, Input, OnInit} from '@angular/core';
+import {IOffer} from '../../interfaces/offers/IOffer';
 
 @Component({
   selector: 'app-offerts',
@@ -6,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./offerts.component.scss'],
 })
 export class OffertsComponent implements OnInit {
-
+  @Input() offers: IOffer[];
   constructor() { }
 
   ngOnInit() {}
