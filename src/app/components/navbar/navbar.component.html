@@ -5,7 +5,7 @@
     </ion-button>
   </ion-buttons>
   <app-search *ngIf="navbar.searchBar"></app-search>
-  <ion-label *ngIf="navbar.text">{{navbar.text}}</ion-label>
+  <ion-title *ngIf="navbar.title">{{navbar.title}}</ion-title>
   <ion-buttons slot="end">
     <ion-menu-button><ion-icon name="more"></ion-icon></ion-menu-button>
   </ion-buttons>

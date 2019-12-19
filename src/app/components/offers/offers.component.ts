@@ -2,11 +2,11 @@ import {Component, Input, OnInit} from '@angular/core';
 import {IOffer} from '../../interfaces/offers/IOffer';
 
 @Component({
-  selector: 'app-offerts',
-  templateUrl: './offerts.component.html',
-  styleUrls: ['./offerts.component.scss'],
+  selector: 'app-offers',
+  templateUrl: './offers.component.html',
+  styleUrls: ['./offers.component.scss'],
 })
-export class OffertsComponent implements OnInit {
+export class OffersComponent implements OnInit {
   @Input() offers: IOffer[];
   constructor() { }
 

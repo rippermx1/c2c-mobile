@@ -1,6 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {INavbar} from '../../interfaces/navbar/INavbar';
 import {IOffer} from '../../interfaces/offers/IOffer';
+import {OfferService} from '../../services/offers/offer.service';
 
 @Component({
   selector: 'app-home',
@@ -20,26 +21,12 @@ export class HomePage implements OnInit {
   /**
    * Offers items
    */
-  offers: IOffer[] = [
-    {
-      id: 1,
-      img: 'http://lorempixel.com/400/100/',
-      url: '/offer'
-    },
-    {
-      id: 2,
-      img: 'http://lorempixel.com/400/100/',
-      url: '/offer'
-    },
-    {
-      id: 3,
-      img: 'http://lorempixel.com/400/100/',
-      url: '/offer'
-    }
-  ];
-  constructor() {}
-  ngOnInit(): void {
+  offers: IOffer[] = [];
 
+  constructor(private offerService: OfferService) {}
+
+  ngOnInit(): void {
+    this.offers = this.offerService.getOffers();
   }
   doRefresh(event) {
     console.log(event);

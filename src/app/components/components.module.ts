@@ -3,20 +3,20 @@ import { CommonModule } from '@angular/common';
 import { IonicModule } from '@ionic/angular';
 import { RouterModule } from '@angular/router';
 import { MenuComponent } from './menu/menu.component';
-import { OffertsComponent } from './offers/offerts.component';
+import { OffersComponent } from './offers/offers.component';
 import { SearchComponent } from './search/search.component';
 import { NavbarComponent } from './navbar/navbar.component';
 
 @NgModule({
   declarations: [
       MenuComponent,
-      OffertsComponent,
+      OffersComponent,
       SearchComponent,
       NavbarComponent
   ],
   exports: [
       MenuComponent,
-      OffertsComponent,
+      OffersComponent,
       SearchComponent,
       NavbarComponent
   ],

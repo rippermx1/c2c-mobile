@@ -1,0 +1,5 @@
+<ion-slides pager="false">
+  <ion-slide *ngFor="let offer of offers">
+    <ion-img src="{{offer.img}}" routerLink="{{offer.url}}/{{offer.id}}" routerDirection="forward"></ion-img>
+  </ion-slide>
+</ion-slides>
