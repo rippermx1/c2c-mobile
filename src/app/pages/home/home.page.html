@@ -10,6 +10,42 @@
   <app-offers [offers]="offers"></app-offers>
 
   <ion-card>
+    <ion-card-content>
+      <ion-card-title>
+        <ion-text>¿Te interesa <a>vender</a> al por mayor?</ion-text>
+      </ion-card-title>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col size="12">
+        <ion-title>Ofertas del día <a>Ver todas</a></ion-title>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col size="6">
+        <ion-card>
+          <img src="https://i.picsum.photos/id/958/150/150.jpg" />
+          <ion-card-header>
+            <ion-card-title>Antes <b>$19.990</b></ion-card-title>
+            <ion-card-subtitle>Ahora <ion-text color="success">$14.990</ion-text></ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+      <ion-col size="6">
+        <ion-card>
+          <img src="https://i.picsum.photos/id/958/150/150.jpg" />
+          <ion-card-header>
+            <ion-card-title>Antes: <b>$19.990</b></ion-card-title>
+            <ion-card-subtitle>Ahora <ion-text color="success">$14.990</ion-text></ion-card-subtitle>
+          </ion-card-header>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+  <ion-card>
     <ion-card-header class="no-padding-bottom">
       <ion-card-title color="primary">Categorías</ion-card-title>
     </ion-card-header>
